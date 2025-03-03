@@ -27,7 +27,7 @@ function Hero() {
           <div className="w-full lg:w-[60%] flex flex-col justify-between sm:justify-center 
             px-4 sm:px-6 md:px-12 lg:pl-24 space-y-4 sm:space-y-6 sm:space-y-8 h-full">
             <div className="font-inter space-y-4 sm:space-y-4 sm:space-y-6 pt-8 sm:pt-12">
-              <h1 className="text-white text-5xl sm:text-4xl md:text-5xl lg:text-[82px] font-bold 
+              <h1 className="text-white text-4xl sm:text-4xl md:text-5xl lg:text-[82px] font-bold 
                 leading-[1.1] sm:leading-[1.2] lg:leading-[1.1] tracking-tight
                 drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]">
                 Strategic expertise<br className="hidden sm:block" />
