@@ -22,7 +22,7 @@ function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative h-full py-4 sm:py-8 sm:py-12">
+      <div className="relative h-full py-4 sm:py-8 sm:py-12 mt-[-20px]">
         <div className="flex h-full">
           <div className="w-full lg:w-[60%] flex flex-col justify-between sm:justify-center 
             px-4 sm:px-6 md:px-12 lg:pl-24 space-y-4 sm:space-y-6 sm:space-y-8 h-full">
