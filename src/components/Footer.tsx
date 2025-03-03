@@ -7,11 +7,11 @@ function Footer() {
   return (
     <footer className="bg-[#2D0A31] text-white rounded-t-[32px]">
       {/* Call to Action Section */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-12">
-        <h2 className="text-4xl md:text-5xl font-medium mb-4">
-          Are you ready to take your business to the next level ?
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-12 md:pt-16 pb-8 md:pb-12">
+        <h2 className="text-3xl md:text-5xl font-medium mb-4 leading-tight">
+          Are you ready to take your business to the next level?
         </h2>
-        <p className="text-white/70 text-lg max-w-3xl">
+        <p className="text-white/70 text-base md:text-lg max-w-3xl">
           Achieve significant business improvements with a free Discovery Call. Collaborate with our experienced team to uncover customized solutions that deliver impactful, measurable results—assured.
         </p>
       </div>
