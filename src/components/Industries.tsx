@@ -89,7 +89,7 @@ function Industries() {
             ))}
           </motion.div>
           
-          <div className="absolute bottom-[-75px] right-[-180px]">
+          <div className="absolute bottom-[-75px] right-[-100px]">
             <img 
               src={arrow} 
               alt="Decorative arrow"
