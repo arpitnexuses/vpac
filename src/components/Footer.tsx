@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import vpaclogo from "./VPAC-white.png"
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
@@ -17,7 +18,17 @@ function Footer() {
 
       {/* Divider */}
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="border-t-2 border-[#39B3C2] w-[95%] mx-auto" />
+        <motion.div 
+          className="border-t-2 border-[#39B3C2] w-[95%] mx-auto"
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true }}
+          transition={{ 
+            duration: 1.2,
+            ease: "easeInOut"
+          }}
+          style={{ transformOrigin: "left" }}
+        />
       </div>
 
       {/* Footer Content */}

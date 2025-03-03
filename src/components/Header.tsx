@@ -14,7 +14,9 @@ function Header() {
           <img 
             src={Image}  
             alt="VPAC Logo" 
-            className="h-14 md:h-16"
+            className="h-10 md:h-14 lg:h-16 w-auto"
+            
+            loading="eager"
           />
         </div>
 
