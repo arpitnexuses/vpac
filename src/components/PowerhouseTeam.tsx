@@ -15,7 +15,7 @@ function PowerhouseTeam() {
           VPAC's core strength lies in its collective of former CXOs, VPs, and Directors from global enterprises. Drawing on decades of proven success in strategic decision-making, operational excellence, and digital innovation, our team delivers world-class guidance at every turn.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {[1, 2, 3, 4].map((index) => (
             <div key={index} className="bg-white rounded-md border-2 border-[#A05EB5] overflow-hidden">
               <div className="w-full aspect-square bg-[#F5F5F5] flex items-center justify-center">

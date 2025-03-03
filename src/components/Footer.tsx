@@ -28,7 +28,7 @@ function Footer() {
             <img 
               src={vpaclogo} 
               alt="VPAC Logo"
-              className="w-[140px] h-auto mb-4 mt-4"
+              className="w-[180px] h-auto mb-4 mt-4"
             />
           </div>
 

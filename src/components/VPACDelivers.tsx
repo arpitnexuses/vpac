@@ -47,7 +47,7 @@ function VPACDelivers() {
                 aria-hidden="true"
               />
             </span>
-            <span className="ml-4 font-normal">Boardroom-to-operations Alignment</span>
+            <span className="ml-4 font-normal md:text-[48px] text-[32px]">Boardroom-to-operations Alignment</span>
           </h2>
         </div>
         

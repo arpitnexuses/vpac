@@ -14,7 +14,7 @@ function Header() {
           <img 
             src={Image}  
             alt="VPAC Logo" 
-            className="h-8 md:h-10"
+            className="h-14 md:h-16"
           />
         </div>
 
