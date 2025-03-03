@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import { motion } from 'framer-motion';
 import firsticon from "./firsticon.png"
 import secondicon from "./secondicon.png"
 
@@ -18,41 +19,122 @@ function WhereExperience() {
         </p>
 
         <div className="flex flex-col md:flex-row justify-between gap-6">
-          <div className="flex-1 bg-[#F8F9FF] rounded-lg p-6 md:p-8">
-            <div className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] mb-4 md:mb-6">
+          <motion.div 
+            className="flex-1 bg-[#F8F9FF] rounded-lg p-6 md:p-8 cursor-pointer"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ 
+              scale: 1.03,
+              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              backgroundColor: "#ffffff",
+            }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <motion.div 
+              className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] mb-4 md:mb-6"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ 
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                delay: 0.2
+              }}
+              whileHover={{ 
+                rotate: [0, -10, 10, -10, 0],
+                transition: { duration: 0.5 }
+              }}
+            >
               <img src={firsticon} alt="Leadership Icon" className="w-full h-full"/>
-            </div>
+            </motion.div>
             <h3 className="text-[#2D2D2D] text-[20px] md:text-[22px] font-bold mb-3">
               100+ Years of Collective Leadership:
             </h3>
             <p className="text-[#4A4A4A] text-[15px] md:text-[16px] leading-[1.5]">
               A wealth of experience spanning various industries and global markets.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex-1 bg-[#F8F9FF] rounded-lg p-6 md:p-8">
-            <div className="text-[#A05EB5] text-[48px] md:text-[60px] font-bold mb-3 md:mb-4">
+          <motion.div 
+            className="flex-1 bg-[#F8F9FF] rounded-lg p-6 md:p-8 cursor-pointer"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            whileHover={{ 
+              scale: 1.03,
+              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              backgroundColor: "#ffffff",
+            }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <motion.div 
+              className="text-[#A05EB5] text-[48px] md:text-[60px] font-bold mb-3 md:mb-4"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ 
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                delay: 0.4
+              }}
+              whileHover={{ 
+                scale: 1.1,
+                transition: { duration: 0.2 }
+              }}
+            >
               100%
-            </div>
+            </motion.div>
             <h3 className="text-[#2D2D2D] text-[20px] md:text-[22px] font-bold mb-3">
               Embedded, On-Demand CXOs:
             </h3>
             <p className="text-[#4A4A4A] text-[15px] md:text-[16px] leading-[1.5]">
               Immediate, high-impact leadership tailored to your organizational needs.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex-1 bg-[#F8F9FF] rounded-lg p-6 md:p-8">
-            <div className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] mb-4 md:mb-6">
+          <motion.div 
+            className="flex-1 bg-[#F8F9FF] rounded-lg p-6 md:p-8 cursor-pointer"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            whileHover={{ 
+              scale: 1.03,
+              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              backgroundColor: "#ffffff",
+            }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <motion.div 
+              className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] mb-4 md:mb-6"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ 
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                delay: 0.6
+              }}
+              whileHover={{ 
+                rotate: [0, -10, 10, -10, 0],
+                transition: { duration: 0.5 }
+              }}
+            >
               <img src={secondicon} alt="Growth Icon" className="w-full h-full"/>
-            </div>
+            </motion.div>
             <h3 className="text-[#2D2D2D] text-[20px] md:text-[22px] font-bold mb-3">
               Adaptive Growth Models:
             </h3>
             <p className="text-[#4A4A4A] text-[15px] md:text-[16px] leading-[1.5]">
               Strategic execution frameworks that evolve with your business needs.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

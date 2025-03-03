@@ -4,15 +4,31 @@ import vpaclogo from "./VPAC-white.png"
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 px-4 md:py-12 md:px-6">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-[#2D0A31] text-white rounded-t-[32px]">
+      {/* Call to Action Section */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-12">
+        <h2 className="text-4xl md:text-5xl font-medium mb-4">
+          Are you ready to take your business to the next level ?
+        </h2>
+        <p className="text-white/70 text-lg max-w-3xl">
+          Achieve significant business improvements with a free Discovery Call. Collaborate with our experienced team to uncover customized solutions that deliver impactful, measurable results—assured.
+        </p>
+      </div>
+
+      {/* Divider */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="border-t-2 border-[#39B3C2] w-[95%] mx-auto" />
+      </div>
+
+      {/* Footer Content */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo Column */}
           <div>
             <img 
               src={vpaclogo} 
               alt="VPAC Logo"
-              className="w-[120px] h-auto mb-4"
+              className="w-[140px] h-auto mb-4 mt-4"
             />
           </div>
 
@@ -82,7 +98,7 @@ function Footer() {
               </a>
               <a href="#" className="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                 <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
               <a href="#" className="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
@@ -91,14 +107,14 @@ function Footer() {
                 </svg>
               </a>
             </div>
-            <a href="#" className="inline-block mt-8 px-6 py-3 bg-[#A05EB5] text-white text-[15px] font-medium rounded-md hover:bg-opacity-90 transition-colors">
-              WE'RE HIRING!
+            <a href="#" className="inline-block mt-8 px-6 py-3 mb-4 bg-[#A05EB5] text-white text-[15px] font-medium rounded-tr-full rounded-tl-none rounded-br-none rounded-bl-none hover:bg-opacity-90 transition-colors">
+              WE'RE HIRING! ↗
             </a>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+        {/* <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-white/70">
           &copy; {new Date().getFullYear()} VPAC. All rights reserved.
-        </div>
+        </div> */}
       </div>
     </footer>
   );

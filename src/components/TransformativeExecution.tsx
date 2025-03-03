@@ -22,7 +22,7 @@ function TransformativeExecution() {
 
         {/* First Row - 2 Cards */}
         <div className="grid grid-cols-2 gap-6 mb-6">
-          <div className="relative bg-[#E6F4FF] rounded-2xl overflow-hidden">
+          <div className="relative bg-[#E6F4FF] rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <img 
               src={firstcardasset} 
               alt="Revenue Graph"
@@ -30,7 +30,7 @@ function TransformativeExecution() {
             />
           </div>
           
-          <div className="rounded-2xl overflow-hidden">
+          <div className="rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <img 
               src={secondgroup}
               alt="Strategic Partnerships"
@@ -42,7 +42,7 @@ function TransformativeExecution() {
         {/* Second Row - 3 Cards */}
         <div className="flex gap-4 mb-6">
           {/* First card: 348px */}
-          <div className="w-[325px] rounded-2xl overflow-hidden bg-[#E6F4FF] h-full">
+          <div className="w-[325px] rounded-2xl overflow-hidden bg-[#E6F4FF] h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <img 
               src={thirdgroup}
               alt="Digital Transformation"
@@ -51,7 +51,7 @@ function TransformativeExecution() {
           </div>
           
           {/* Middle card: 464px */}
-          <div className="w-[515px] rounded-2xl overflow-hidden bg-[#A05EB5]">
+          <div className="w-[515px] rounded-2xl overflow-hidden bg-[#A05EB5] transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <img 
               src={fourgroup}
               alt="Technology Leadership"
@@ -60,7 +60,7 @@ function TransformativeExecution() {
           </div>
           
           {/* Last card: 348px */}
-          <div className="w-[325px] rounded-2xl overflow-hidden bg-[#E6F4FF] h-full">
+          <div className="w-[325px] rounded-2xl overflow-hidden bg-[#E6F4FF] h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <img 
               src={fivegroup}
               alt="Operational Excellence"
@@ -70,14 +70,12 @@ function TransformativeExecution() {
         </div>
 
         {/* Bottom Card */}
-        <div className="rounded-2xl overflow-hidden ">
-          
-              <img 
-                src={sixgroup}
-                alt="Leadership Development"
-                className="w-full h-full object-cover"
-              />
-            
+        <div className="rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+          <img 
+            src={sixgroup}
+            alt="Leadership Development"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>

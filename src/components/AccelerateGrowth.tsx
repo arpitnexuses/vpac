@@ -15,7 +15,7 @@ function AccelerateGrowth() {
               className="h-full w-auto object-contain object-right"
             />
             {/* Decorative lines */}
-            <div className="absolute inset-0 w-full h-full">
+            {/* <div className="absolute inset-0 w-full h-full">
               {[...Array(15)].map((_, i) => (
                 <React.Fragment key={i}>
                   <div 
@@ -34,7 +34,7 @@ function AccelerateGrowth() {
                   />
                 </React.Fragment>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Content */}

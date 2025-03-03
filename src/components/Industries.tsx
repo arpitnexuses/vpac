@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import manuind from "./manuind.png";
 import pharmaind from "./pharmaind.png";
 import retailind from "./retailind.png";
+import arrow from "./arrow.png";
 
 function Industries() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -42,22 +43,33 @@ function Industries() {
           <motion.div 
             className="flex gap-8"
             animate={{
-              x: [-10, -1200, -10],
+              x: [-1200, 0],
             }}
             transition={{
-              duration: 40,
+              duration: 15,
               repeat: Infinity,
               ease: "linear",
               repeatType: "loop"
             }}
+            whileHover={{ 
+              animationPlayState: "paused" 
+            }}
+            style={{
+              cursor: "grab"
+            }}
           >
             {[...industries, ...industries, ...industries].map((industry, index) => (
-              <div 
+              <motion.div 
                 key={index} 
-                className="min-w-[380px] bg-white rounded-[16px] border border-[#A05EB5] p-5"
+                className="min-w-[380px] bg-white rounded-[16px] border border-[#A05EB5] p-5 cursor-pointer transition-all duration-300 hover:shadow-lg"
+                whileHover={{ 
+                  scale: 1.05,
+                  transition: { duration: 0.2 }
+                }}
+                initial={{ scale: 1 }}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 bg-[#F9F5FF] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#F9F5FF] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#A05EB5]">
                     <img 
                       src={industry.icon} 
                       alt={industry.title}
@@ -73,9 +85,17 @@ function Industries() {
                 <p className="text-[#666666] text-[14px] leading-[1.4] pl-[56px]">
                   {industry.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </motion.div>
+          
+          <div className="absolute bottom-[-75px] right-[-180px]">
+            <img 
+              src={arrow} 
+              alt="Decorative arrow"
+              className="w-[100px] h-auto"
+            />
+          </div>
         </div>
       </div>
     </section>
