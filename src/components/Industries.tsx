@@ -89,11 +89,19 @@ function Industries() {
             ))}
           </motion.div>
           
-          <div className="absolute bottom-[-35px] sm:bottom-[105px] right-0 sm:right-[-100px]">
+          <div className="hidden sm:block absolute bottom-[-70px] right-[-100px]">
             <img 
               src={arrow} 
               alt="Decorative arrow"
-              className="w-[60px] sm:w-[100px] h-auto"
+              className="w-[100px] h-auto"
+            />
+          </div>
+
+          <div className="block sm:hidden absolute bottom-[-35px] right-0">
+            <img 
+              src={arrow} 
+              alt="Decorative arrow"
+              className="w-[60px] h-auto"
             />
           </div>
         </div>
